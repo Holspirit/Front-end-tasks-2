@@ -1,0 +1,156 @@
+img {
+    width: 167px;
+    height: 34px;
+    margin: 10px;
+    margin-right: 100px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+div.logo {
+    height: 64px;
+}
+.page-header {
+    height: 64px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: rgba(0,0,0,.85) 5px solid;
+    z-index: 99;
+    box-shadow: 0 0 #333;
+}
+div.nav-header {
+    display: flex;
+    justify-content: space-evenly;
+}
+div.nav-header a{
+    margin-right: 10px;
+    color: #333;
+    font-weight: 500;
+}
+.icon1 {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.client-part {
+    display: flex;
+    margin-left: 10px;
+}
+.content1 {
+    height: 480px;
+    width: 2000px;
+    background-image: url(../images/背景.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+}
+.in_content h2{
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+.in_content h3{
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 48px;
+}
+a {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid white;
+    line-height: 40px;
+    text-align: center;
+}
+._01 {
+    background-color: white;
+}
+._02 {
+    color: white;
+}
+.content2 {
+    height: 635px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content2 h2 {
+    font-size: 28px;
+    color: rgba(0,0,0,.85);
+    text-align: center;
+    margin: 39px 0 0;
+}
+.superiority {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 32px;
+}
+.s1,.s2,.s3,.s4 {
+    width: 260px;
+    height: 300px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px #333;
+    margin-right: 50px;
+    transition: 0.2s linear;
+}
+.superiority span {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+}
+.superiority p {
+    margin-top: 12px;
+    margin-bottom: 1em;
+    width: 220px;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.content2 .extra-but {
+    width: 180px;
+    height: 40px;
+    color: white;
+    background-color: #161823;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 40px;
+}
+/* 鼠标悬浮时上移 */
+.s1:hover,.s2:hover,.s3:hover,.s4:hover {
+    margin-top: -20px;
+    cursor: pointer;
+}
+/* 能力有限，只能设置鼠标悬浮在图片上时出现动画 */
+div.img:hover {
+    animation-name: ex1;
+    animation-duration: 0.1s;
+    animation-timing-function: steps(14);
+    animation-fill-mode: forwards;
+}
+/* 设置动画 */
+@keyframes ex1 {
+    0%{}
+    100%{
+        background-position: 0px -3360px;
+    }
+}
+
